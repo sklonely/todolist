@@ -9,11 +9,11 @@ import ghpages from 'vite-plugin-gh-pages'
 export default defineConfig({
   plugins: [
     vue(),
-    ghpages(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  base:"todolist/"
 })
